@@ -5,7 +5,7 @@ from gidgethub.aiohttp import GitHubAPI
 
 async def main():
    async with aiohttp.ClientSession() as session:
-       gh = GitHubAPI(session, "mariatta", oauth_token=os.getenv("GH_AUTH"))
+       gh = GitHubAPI(session, "manaswinidas", oauth_token=os.getenv("GH_AUTH"))
        await gh.post('/repos/manaswinidas/github-ci/issues',
              data={
                  'title': 'We got a problem',
